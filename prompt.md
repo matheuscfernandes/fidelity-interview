@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Prompt
-description: Case Prompt
+title: Case Prompt
+description:
 ---
 
 ## Case Prompt
