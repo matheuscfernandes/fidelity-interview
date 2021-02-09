@@ -1,0 +1,10 @@
+geopandas
+geopy
+pandas
+numpy
+geocoder
+matplotlib
+seaborn
+sklearn
+uszipcode==0.2.4
+xgboost==1.3.3
