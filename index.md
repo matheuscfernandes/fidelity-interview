@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Allegheny County Property Analysis
+description: A Case Study presented by Fidelity Managment & Research Interview Committee
 ---
 
 # About Matt C. Fernandes
