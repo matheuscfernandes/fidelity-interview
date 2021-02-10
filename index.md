@@ -92,7 +92,7 @@ Most of the data in the dataset is located in a few zipcode. This could lead to 
 
 ### How do the assessments impact pricing?
 
-From the plot below, I see that there is a positive correlation between property sale price and fair market assessement. This is expected since the goal of the assessment is to predict the value of a peroperty. Coversely, we also see that the assessement is, in my opinion, not doing a good enough job of predicting the sale price. My goal here is to do better job predicting the sale price than the official assessement. :smiley:
+From the plot below, I see that there is a positive correlation between property sale price and fair market assessement. This is expected since the goal of the assessment is to predict the value of a peroperty. Coversely, we also see that the assessement is, in my opinion, not doing a good enough job of predicting the sale price. My goal here is to do better job predicting the sale price than the official assessement. 😄
 
 <div style="text-align:center"><img src="./assets/assesdep.png" width='50%'></div>
 
