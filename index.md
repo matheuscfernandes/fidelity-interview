@@ -7,7 +7,7 @@ description: A Case Study presented to Fidelity Managment & Research Interview C
 You may also execute the code presented in this analysis using [DeepNote](http://fer.me/fidelity-nb)
 
 # About Matheus C. Fernandes
-I am a finishing PhD candidate in Applied Mathematics at Harvard University School of Engineering and Applied Sciences. As a NSF-GRFP fellow, my PhD thesis involves numerically modeling bio-inspired optimized materials and applying generative parametric machine learning algorithms to control soft robotic actuators and classify objects based on embedded sensor data.
+I am a finishing PhD candidate in Applied Mathematics at Harvard University School of Engineering and Applied Sciences. As a NSF-GRFP fellow, my PhD thesis involves numerically modeling bio-inspired optimized materials and applying generative parametric machine learning algorithms to control soft robotic actuators and classify objects based on embedded sensor data. You may watch a TED-style talk on my research work [Youtube](https://youtu.be/u16FjNGMoEs)
 
 I have earned a Masters of Science (S.M.) in Computational Science and Engineering in 2020 from Harvard and earned a terminal Masters of Engineering (M.Eng.) in Engineering Sciences with a concentration in Mechanical Engineering and Material Science in 2015 also from Harvard. My M.Eng. thesis was on modeling 'Mechanics of Subglacial Hydrology under Supraglacial Lakes and Ice Stream Shear Margins'. 
 
@@ -21,6 +21,7 @@ To learn more about my research interests and find a list of publicaitons, pleas
 # Data Cleaning
 
 # Exploratory Data Analysis
+![SalePrice-Time](./assets/saledate.png)
 
 # Model Exploration
 
