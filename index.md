@@ -15,9 +15,8 @@ To learn more about my research interests and find a list of publicaitons, pleas
 
 
 # About Allegheny County
+
 <div style="text-align:center"><img src="./assets/alleghenyct.png" width='40%'></div>
-
-
 
 Located inin the southwest of the U.S. state of Pennsylvania. As of 2019 the population was 1,216,045, making it the state's second-most populous county, following Philadelphia County. The county seat is Pittsburgh. Allegheny County is included in the Pittsburgh, PA Metropolitan Statistical Area, and in the Pittsburgh Designated Market Area.
 
@@ -28,6 +27,8 @@ Develop a monthly “Allegheny County Home Value Index” (HVI) to understand ke
 The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments), which can be downloaded directily from [here](https://www.dropbox.com/s/ordhz0pszt4v4x7/assessments.csv?dl=1). Each of the features contained in the dataset are explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
 
 # Data Cleaning
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/1-DataCleaning.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F1-DataCleaning.ipynb)
+
 In order to ensure adequate and properly labeled data, I performed a strict data cleaning procedure. I removed data that is missing important information such as 
 
 - Sale price
@@ -49,6 +50,8 @@ In an attempt at feature engineering, I tired converting street addresses into l
 Lastly, to ensure proper weighting between features, I standardized the dataset.
 
 # Exploratory Data Analysis
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/2-ExploratoryDataAnalysis.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F2-ExploratoryDataAnalysis.ipynb)
+
 I performed Exploratory Data Analysis on the data before considering any models. This allows me to understand the effects of each of the variables on the target data of interest, namely, each properties sale price.
 
 The first variable I explore is sale date. To understand how the price varies with time, I plot the price in a semilog y axis as a function of time.  
@@ -97,6 +100,7 @@ From the plot below, I see that there is a positive correlation between property
 <div style="text-align:center"><img src="./assets/assesdep.png" width='50%'></div>
 
 # Model Exploration
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/3-ModelExploration.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F3-ModelExploration.ipynb)
 
 **Model Goal:** Predict valuation of existing homes for a variable sale date.  
 
@@ -138,136 +142,40 @@ From the plot below, I see that there is a positive correlation between property
 
 
 *Scores are measured using R2 Score: 1-(sum of square residuals/total sum of squares)
+
 SD = sampled dataset
 
+### About XGBoost
+This is a decision-tree-based ensemble model that Uses gradient boosting framework to convert weak to strong learner through sequential learning
+Gradient descent algorithm. This method is great for small-to-medium structured/tabular data and is boosting optimized for software and hardware parallelization.
+
+## Another Level Feature Selection
+### Feature Importance
+
+<div style="text-align:center"><img src="./assets/gini.png" width='20%'></div>
+
+<div style="text-align:center"><img src="./assets/featimp.png" width='50%'></div>
+
+### Permutation Importance
+<div style="text-align:center"><img src="./assets/permimp.png" width='50%'></div>
+
+## Hyper Parameter Tuning
+<div style="text-align:center"><img src="./assets/hypertune.png" width='50%'></div>
+
 # Computing HVI
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/4-ComputingHVI.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F4-ComputingHVI.ipynb)
+
 ## Method
+<div style="text-align:center"><img src="./assets/hviproc.png" width='90%'></div>
 
 ## Assumptions
+
+## Results
+<div style="text-align:center"><img src="./assets/results.png" width='90%'></div>
+
 
 # Conclusions
 
 Based on the resutls obtained from the model alone under the stated assumptions, I do not suggest investing in the housing stock on Allegheny county at the moment. If the costumer currenly holds properties holdings at the moment, I would recommend liquidating the assets 
 
 However, uncertainties arising  unaccounting for additional 
-
-
-<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-``` -->
