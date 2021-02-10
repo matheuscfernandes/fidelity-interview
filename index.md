@@ -127,8 +127,6 @@ From the plot below, I see that there is a positive correlation between property
 
 ## Model Performances
 
-<center>
-
 |     Model                                  |     Train Score    |     Test Score    |
 |--------------------------------------------|:------------------:|:-----------------:|
 |     Linear Model: LassoCV                  |        0.573       |        0.495      |
@@ -138,7 +136,6 @@ From the plot below, I see that there is a positive correlation between property
 |     Ensemble: Adaptive Boosting (SD)       |        0.829       |        0.380      |
 |     Ensemble: Extreme Gradient Boosting    |        0.814       |        0.767      |
 
-</center>
 
 *Scores are measured using R2 Score: 1-(sum of square residuals/total sum of squares)
 SD = sampled dataset
