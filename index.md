@@ -46,26 +46,69 @@ In an attempt at feature engineering, I tired converting street addresses into l
 
 <div style="text-align:center"><img src="./assets/geolocation.png" width='70%'></div>
 
-
 Lastly, to ensure proper weighting between features, I standardized the dataset.
 
 # Exploratory Data Analysis
+To understand the effects of each of the variables on the data 
 
-<img src="./assets/saledate.png" width='40%'>
-
-
-<img src="./assets/correlationmatrix.png" width='40%'>
-
-<img src="./assets/martingale.png" width='40%'>
+<div style="text-align:center"><img src="./assets/saledate.png" width='40%'></div>
 
 
-<img src="./assets/expfit.png" width='40%'>
+<div style="text-align:center"><img src="./assets/correlationmatrix.png" width='40%'></div>
 
-<img src="./assets/features.png" width='40%'>
+<div style="text-align:center"><img src="./assets/martingale.png" width='40%'></div>
+
+<div style="text-align:center"><img src="./assets/saledate.png" width='40%'></div>
+
+
+<div style="text-align:center"><img src="./assets/expfit.png" width='40%'></div>
+
+<div style="text-align:center"><img src="./assets/features.png" width='40%'></div>
 
 
 
 # Model Exploration
+
+**Model Goal:** Predict valuation of existing homes for a variable sale date.  
+
+**Target variable:** Sale Price
+
+**Input variables:** Sale date and important features that provide information on the valuation of a property at a certain date
+
+**Model Assumptions:**
+
+- No information on the buyers side (demand)
+- No listing prices or spread of ask/bid
+- No information on interest rates
+- No demographic information
+- No information on the economy
+- No refined information on location
+- Based on assessments only from 2021 (dataset)
+- Discrete daily sampling 
+
+**Seek these regression model characteristics:**
+
+- Deal with sparse data
+- Good for dealing with categorical and numerical data
+- Efficient at training (limited computational resources on my end)
+- Scalable to potentially adding more data in the future
+
+
+
+
+## Model Performances
+
+|     Model                                  |     Train Score    |     Test Score    |
+|--------------------------------------------|:------------------:|:-----------------:|
+|     Linear Model: LassoCV                  |        0.573       |        0.495      |
+|     Support Vector Machine (SD)            |        0.201       |        0.007      |
+|     Ensemble: Random Forest                |        0.900       |        0.523      |
+|     Ensemble: Bagging                      |        0.930       |        0.588      |
+|     Ensemble: Adaptive Boosting (SD)       |        0.829       |        0.380      |
+|     Ensemble: Extreme Gradient Boosting    |        0.814       |        0.767      |
+
+*Scores are measured using R2 Score: 1-(sum of square residuals/total sum of squares)
+SD = sampled dataset
 
 # Computing HVI
 ## Method
