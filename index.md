@@ -73,12 +73,26 @@ Next, I do a deeper dive into the data to udnerstand wow does each variable depe
 
 ### How do house properties impact pricing?
 
+From the plot below, I see that the properties features can impact pricing. Most of it is concentrated into properties that meet certain criteria -- likely due to proximity to city centers. Bigger is not neccessarily higher price.
+
 <div style="text-align:center"><img src="./assets/propdep.png" width='80%'></div>
+
+### How does location impact pricing?
+
+From the plot below, I see that location can impact property valuations. Mostly concentrated at the center, which is the downtown area of Pittsburgh.
+
 
 <div style="text-align:center"><img src="./assets/locdep.png" width='40%'></div>
 
+### What is the distribution of the data across different locations?
+
+Most of the data in the dataset is located in a few zipcode. This could lead to problems in the prediction as most of the information we have is concentrated in certain locations.
 
 <div style="text-align:center"><img src="./assets/zipdist.png" width='90%'></div>
+
+### How do the assessments impact pricing?
+
+From the plot below, I see that there is a positive correlation between property sale price and fair market assessement. This is expected since the goal of the assessment is to predict the value of a peroperty. Coversely, we also see that the assessement is, in my opinion, not doing a good enough job of predicting the sale price. My goal here is to do better job predicting the sale price than the official assessement. :smiley:
 
 <div style="text-align:center"><img src="./assets/assesdep.png" width='50%'></div>
 
