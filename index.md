@@ -4,10 +4,10 @@ title: Allegheny County House Value Index
 description: A Case Study presented to Fidelity Managment & Research Interview Committee
 ---
 
-You may also execute the code presented in this analysis using [DeepNote](http://fer.me/fidelity-nb)
+You may also execute the code presented in this analysis using [DeepNote](http://fer.me/fidelity-nb).
 
 # About Matheus C. Fernandes
-I am a finishing PhD candidate in Applied Mathematics at Harvard University School of Engineering and Applied Sciences. As a NSF-GRFP fellow, my PhD thesis involves numerically modeling bio-inspired optimized materials and applying generative parametric machine learning algorithms to control soft robotic actuators and classify objects based on embedded sensor data. You may watch a TED-style talk on my research work [Youtube](https://youtu.be/u16FjNGMoEs)
+I am a finishing PhD candidate in Applied Mathematics at Harvard University School of Engineering and Applied Sciences. As a NSF-GRFP fellow, my PhD thesis involves numerically modeling bio-inspired optimized materials and applying generative parametric machine learning algorithms to control soft robotic actuators and classify objects based on embedded sensor data. You may watch a TED-style talk on my research work on [Youtube](https://youtu.be/u16FjNGMoEs).
 
 I have earned a Masters of Science (S.M.) in Computational Science and Engineering in 2020 from Harvard and earned a terminal Masters of Engineering (M.Eng.) in Engineering Sciences with a concentration in Mechanical Engineering and Material Science in 2015 also from Harvard. My M.Eng. thesis was on modeling 'Mechanics of Subglacial Hydrology under Supraglacial Lakes and Ice Stream Shear Margins'. 
 
@@ -17,14 +17,19 @@ To learn more about my research interests and find a list of publicaitons, pleas
 # About Allegheny County
 <img src="./assets/alleghenyct.png" width='40%'>
 
-# Purpose of this project
+# Project Goal
+Develop a monthly “Allegheny County Home Value Index” (HVI) to understand key features of the market. Create model to gain insights for investment opportunities.
+
+# About the Dataset
+The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments), which can be downloaded directily from [here](https://www.dropbox.com/s/ordhz0pszt4v4x7/assessments.csv?dl=1). Each of the features contained in the dataset are explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
 
 # Data Cleaning
+
+
 
 # Exploratory Data Analysis
 
 <img src="./assets/saledate.png" width='40%'>
-<!-- ![SalePrice-Time](./assets/saledate.png) -->
 
 <img src="./assets/geolocation.png" width='40%'>
 
@@ -42,9 +47,15 @@ To learn more about my research interests and find a list of publicaitons, pleas
 # Model Exploration
 
 # Computing HVI
+## Method
+
+## Assumptions
 
 # Conclusions
 
+Based on the resutls obtained from the model alone under the stated assumptions, I do not suggest investing in the housing stock on Allegheny county at the moment. If the costumer currenly holds properties holdings at the moment, I would recommend liquidating the assets 
+
+However, uncertainties arising  unaccounting for additional 
 
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
