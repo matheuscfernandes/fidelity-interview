@@ -151,15 +151,29 @@ Gradient descent algorithm. This method is great for small-to-medium structured/
 
 ## Another Level Feature Selection
 ### Feature Importance
-
+This importance measure is based on the Gini importance of decision trees defined by:
 <div style="text-align:center"><img src="./assets/gini.png" width='20%'></div>
+
+Looking at each of the features importance measure, we can rank them from highest to lowest and plot them as seen below. The higher the importance the more crucial the feature is for the prediction.
 
 <div style="text-align:center"><img src="./assets/featimp.png" width='50%'></div>
 
 ### Permutation Importance
+For the permutation importance, the algorithm computes a score for the model and then, for each feature, shuffles the column and compute score for corrupted dataset. Then, based on how much it impacts the accuracy of the prediction (in the form of error) it provides a measure of how important a feature is. The higher the importance the more crucial a particular feature is for the model.
+
 <div style="text-align:center"><img src="./assets/permimp.png" width='50%'></div>
 
 ## Hyper Parameter Tuning
+
+For computational efficiency, only tuned 1 param – number of estimators
+
+Use cross-validation with 4-way split
+
+A bias-variance balance is obtained at n=110, with underfitting before and overfitting after
+
+As n increases computational time increases
+
+
 <div style="text-align:center"><img src="./assets/hypertune.png" width='50%'></div>
 
 # Computing HVI
@@ -168,14 +182,14 @@ This portion of the project can be found on [Github](https://github.com/matheusc
 ## Method
 <div style="text-align:center"><img src="./assets/hviproc.png" width='90%'></div>
 
-## Assumptions
-
 ## Results
-<div style="text-align:center"><img src="./assets/results.png" width='90%'></div>
+<div style="text-align:center"><img src="./assets/results.png" width='50%'></div>
 
 
-# Conclusions
+# Conclusions and Recommendations
 
 Based on the resutls obtained from the model alone under the stated assumptions, I do not suggest investing in the housing stock on Allegheny county at the moment. If the costumer currenly holds properties holdings at the moment, I would recommend liquidating the assets 
 
 However, uncertainties arising  unaccounting for additional 
+
+# 
