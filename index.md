@@ -22,7 +22,7 @@ To learn more about my research interests and find a list of publicaitons, pleas
 
 # Exploratory Data Analysis
 
-<img src="./assets/saledate.png" alt="drawing" width=40%>
+<img src="./assets/saledate.png" width='40%'>
 <!-- ![SalePrice-Time](./assets/saledate.png) -->
 
 # Model Exploration
