@@ -15,7 +15,9 @@ To learn more about my research interests and find a list of publicaitons, pleas
 
 
 # About Allegheny County
-<img src="./assets/alleghenyct.png" width='40%'>
+<div style="text-align:center"><img src="./assets/alleghenyct.png" width='40%'></div>
+
+
 
 Located inin the southwest of the U.S. state of Pennsylvania. As of 2019 the population was 1,216,045, making it the state's second-most populous county, following Philadelphia County. The county seat is Pittsburgh. Allegheny County is included in the Pittsburgh, PA Metropolitan Statistical Area, and in the Pittsburgh Designated Market Area.
 
@@ -42,7 +44,8 @@ Also to ensure computational efficiency, I converted 64bit integers to 32- and 8
 
 In an attempt at feature engineering, I tired converting street addresses into latitude and longitude geolocations, but because the free API was extremely slow, I decided to perform this on the zipcode level instead of the property level. I then encoded the zipcode into latitude and longitudes. By comparing the granualrity between these two I made the decision to pursue only keeping the zipcode level.
 
-<img src="./assets/geolocation.png" width='70%'>
+<div style="text-align:center"><img src="./assets/geolocation.png" width='70%'></div>
+
 
 Lastly, to ensure proper weighting between features, I standardized the dataset.
 
