@@ -114,6 +114,7 @@ Next, I do a deeper dive into the data to udnerstand wow does each variable depe
 ## Model Performances
 
 <center>
+
 |     Model                                  |     Train Score    |     Test Score    |
 |--------------------------------------------|:------------------:|:-----------------:|
 |     Linear Model: LassoCV                  |        0.573       |        0.495      |
@@ -122,7 +123,9 @@ Next, I do a deeper dive into the data to udnerstand wow does each variable depe
 |     Ensemble: Bagging                      |        0.930       |        0.588      |
 |     Ensemble: Adaptive Boosting (SD)       |        0.829       |        0.380      |
 |     Ensemble: Extreme Gradient Boosting    |        0.814       |        0.767      |
+
 </center>
+
 *Scores are measured using R2 Score: 1-(sum of square residuals/total sum of squares)
 SD = sampled dataset
 
