@@ -49,23 +49,38 @@ In an attempt at feature engineering, I tired converting street addresses into l
 Lastly, to ensure proper weighting between features, I standardized the dataset.
 
 # Exploratory Data Analysis
-To understand the effects of each of the variables on the data 
+I performed Exploratory Data Analysis on the data before considering any models. This allows me to understand the effects of each of the variables on the target data of interest, namely, each properties sale price.
+
+The first variable I explore is sale date. To understand how the price varies with time, I plot the price in a semilog y axis as a function of time.  
 
 <div style="text-align:center"><img src="./assets/saledate.png" width='40%'></div>
 
+The first question I attempt in answering is wether this time series is martingale. For it to be a martingale, the random variable must follow the following conditional expectation constraints:
 
-<div style="text-align:center"><img src="./assets/correlationmatrix.png" width='40%'></div>
+<div style="text-align:center"><img src="./assets/martingale.png" width='30%'></div>
 
-<div style="text-align:center"><img src="./assets/martingale.png" width='40%'></div>
-
-<div style="text-align:center"><img src="./assets/saledate.png" width='40%'></div>
-
+By fitting an exponential line, we see that the expectation follows an exponential growth, namely, $y=ae^{bx}$
 
 <div style="text-align:center"><img src="./assets/expfit.png" width='40%'></div>
 
-<div style="text-align:center"><img src="./assets/features.png" width='40%'></div>
+The next thing to look at is the correlation between variables. To do that I plot the correlation matrix. This provides information on correlation of variables. No correlation does not mean no useful information. But high correlation between variables means potential redundancy between those variables.
+
+<div style="text-align:center"><img src="./assets/correlationmatrix.png" width='60%'></div>
+
+Next, I do a deeper dive into the data to udnerstand wow does each variable depends on the other. This can help me look for trends in the data and see how property sale price depends on each feature.
+
+<div style="text-align:center"><img src="./assets/features.png" width='80%'></div>
+
+### How do house properties impact pricing?
+
+<div style="text-align:center"><img src="./assets/propdep.png" width='80%'></div>
+
+<div style="text-align:center"><img src="./assets/locdep.png" width='40%'></div>
 
 
+<div style="text-align:center"><img src="./assets/zipdist.png" width='90%'></div>
+
+<div style="text-align:center"><img src="./assets/assesdep.png" width='50%'></div>
 
 # Model Exploration
 
@@ -97,6 +112,7 @@ To understand the effects of each of the variables on the data
 
 
 ## Model Performances
+<center>
 
 |     Model                                  |     Train Score    |     Test Score    |
 |--------------------------------------------|:------------------:|:-----------------:|
@@ -106,7 +122,7 @@ To understand the effects of each of the variables on the data
 |     Ensemble: Bagging                      |        0.930       |        0.588      |
 |     Ensemble: Adaptive Boosting (SD)       |        0.829       |        0.380      |
 |     Ensemble: Extreme Gradient Boosting    |        0.814       |        0.767      |
-
+</center>
 *Scores are measured using R2 Score: 1-(sum of square residuals/total sum of squares)
 SD = sampled dataset
 
