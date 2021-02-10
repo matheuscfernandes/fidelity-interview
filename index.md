@@ -21,7 +21,9 @@ To learn more about my research interests and find a list of publicaitons, pleas
 # Data Cleaning
 
 # Exploratory Data Analysis
-![SalePrice-Time](./assets/saledate.png)
+
+<img src="./assets/saledate.png" alt="drawing" width=40%/>
+<!-- ![SalePrice-Time](./assets/saledate.png) -->
 
 # Model Exploration
 
