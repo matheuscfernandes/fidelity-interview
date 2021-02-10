@@ -17,6 +17,8 @@ To learn more about my research interests and find a list of publicaitons, pleas
 # About Allegheny County
 <img src="./assets/alleghenyct.png" width='40%'>
 
+Located inin the southwest of the U.S. state of Pennsylvania. As of 2019 the population was 1,216,045, making it the state's second-most populous county, following Philadelphia County. The county seat is Pittsburgh. Allegheny County is included in the Pittsburgh, PA Metropolitan Statistical Area, and in the Pittsburgh Designated Market Area.
+
 # Project Goal
 Develop a monthly “Allegheny County Home Value Index” (HVI) to understand key features of the market. Create model to gain insights for investment opportunities.
 
@@ -24,14 +26,30 @@ Develop a monthly “Allegheny County Home Value Index” (HVI) to understand ke
 The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments), which can be downloaded directily from [here](https://www.dropbox.com/s/ordhz0pszt4v4x7/assessments.csv?dl=1). Each of the features contained in the dataset are explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
 
 # Data Cleaning
+In order to ensure adequate and properly labeled data, I performed a strict data cleaning procedure. I removed data that is missing important information such as 
 
+- Sale price
+- Sale date
+- Sale price is 0 or unreasonably low (<$1000)
 
+For other less important features, I attempted to not loose the information contained in columns not missing data, but at the same time not introduce noise into the data. To achieve this, I employed a few different strategies, depending on the date, namely:
+
+- Created new category of unknonw, zeros, or boolean
+- Replaced missing data with mean from other data for continuous variables
+- Imputed information from different columns where it made sense, namely, previous sale date and previous sale date 2
+
+Also to ensure computational efficiency, I converted 64bit integers to 32- and 8-bit integers. This reduced the data in memory from ~380MB to ~120MB without loosing any information.
+
+In an attempt at feature engineering, I tired converting street addresses into latitude and longitude geolocations, but because the free API was extremely slow, I decided to perform this on the zipcode level instead of the property level. I then encoded the zipcode into latitude and longitudes. By comparing the granualrity between these two I made the decision to pursue only keeping the zipcode level.
+
+<img src="./assets/geolocation.png" width='70%'>
+
+Lastly, to ensure proper weighting between features, I standardized the dataset.
 
 # Exploratory Data Analysis
 
 <img src="./assets/saledate.png" width='40%'>
 
-<img src="./assets/geolocation.png" width='40%'>
 
 <img src="./assets/correlationmatrix.png" width='40%'>
 
