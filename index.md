@@ -112,8 +112,8 @@ Next, I do a deeper dive into the data to udnerstand wow does each variable depe
 
 
 ## Model Performances
-<center>
 
+<center>
 |     Model                                  |     Train Score    |     Test Score    |
 |--------------------------------------------|:------------------:|:-----------------:|
 |     Linear Model: LassoCV                  |        0.573       |        0.495      |
