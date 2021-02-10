@@ -4,6 +4,8 @@ title: Allegheny County House Value Index
 description: A Case Study presented to Fidelity Managment & Research Interview Committee
 ---
 
+You may also execute the code presented in this analysis using [DeepNote](http://fer.me/fidelity-nb)
+
 # About Matheus C. Fernandes
 I am a finishing PhD candidate in Applied Mathematics at Harvard University School of Engineering and Applied Sciences. As a NSF-GRFP fellow, my PhD thesis involves numerically modeling bio-inspired optimized materials and applying generative parametric machine learning algorithms to control soft robotic actuators and classify objects based on embedded sensor data.
 
