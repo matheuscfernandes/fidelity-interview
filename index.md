@@ -15,6 +15,7 @@ To learn more about my research interests and find a list of publicaitons, pleas
 
 
 # About Allegheny County
+<img src="./assets/alleghenyct.png" width='40%'>
 
 # Purpose of this project
 
@@ -24,6 +25,19 @@ To learn more about my research interests and find a list of publicaitons, pleas
 
 <img src="./assets/saledate.png" width='40%'>
 <!-- ![SalePrice-Time](./assets/saledate.png) -->
+
+<img src="./assets/geolocation.png" width='40%'>
+
+<img src="./assets/correlationmatrix.png" width='40%'>
+
+<img src="./assets/martingale.png" width='40%'>
+
+
+<img src="./assets/expfit.png" width='40%'>
+
+<img src="./assets/features.png" width='40%'>
+
+
 
 # Model Exploration
 
