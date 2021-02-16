@@ -210,3 +210,7 @@ Based on the results obtained from the model alone under the stated assumptions,
 # Model Extension and Improvement Suggestions
 
 To improve the model, I would like to create a monthly HVI for each separate Zip code and create a county-level index based on the zip code level. Implement a better geolocation scheme to refine location information as well as account for economic data such as interest rates into the model. Finally, I would like to include additional sale data and historical assessment data from multiple listing services (MLS).
+
+# Presentation Slides
+
+<iframe src="https://drive.google.com/file/d/1mhwHz1rcWuX6OW6nnMwcgMHaZgWUtUCJ/preview" width="100%" height="700"></iframe>
