@@ -11,7 +11,7 @@ I am a finishing Ph.D. candidate in Applied Mathematics at Harvard University Sc
 
 I have earned a Masters of Science (S.M.) in Computational Science and Engineering in 2020 from Harvard and earned a terminal Masters of Engineering (M.Eng.) in Engineering Sciences with a concentration in Mechanical Engineering and Material Science in 2015 also from Harvard. My M.Eng. thesis was on modeling 'Mechanics of Subglacial Hydrology under Supraglacial Lakes and Ice Stream Shear Margins'. 
 
-To learn more about my research interests and find a list of publications, please visit my website at [mcfernandes.com](http://mcfernandes.com). You may also find my full CV and Resume [here](./about.html).
+To learn more about my research interests and find a list of publications, please visit my website at [fer.me](https://fer.me). You may also find my full CV and Resume [here](./about.html).
 
 
 # About Allegheny County
@@ -24,7 +24,7 @@ Located in the southwest of the U.S. state of Pennsylvania. As of 2019, the popu
 Develop a monthly “Allegheny County Home Value Index” (HVI) to understand key features of the market. Create a model to gain insights for investment opportunities.
 
 # About the Dataset
-The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments), which can be downloaded directly from [here](https://www.dropbox.com/s/ordhz0pszt4v4x7/assessments.csv?dl=1). Each of the features contained in the dataset is explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
+The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments). Each of the features contained in the dataset is explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
 
 # 1. Data Cleaning
 This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/1-DataCleaning.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F1-DataCleaning.ipynb)
