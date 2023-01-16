@@ -21,7 +21,7 @@ To learn more about my research interests and find a list of publications, pleas
 Located in the southwest of the U.S. state of Pennsylvania. As of 2019, the population was 1,216,045, making it the state's second-most populous county, following Philadelphia County. The county seat is Pittsburgh. Allegheny County is included in the Pittsburgh, PA Metropolitan Statistical Area, and in the Pittsburgh Designated Market Area.
 
 # Project Goal
-Develop a monthly “Allegheny County Home Value Index” (HVI) to understand key features of the market. Create a model to gain insights for investment opportunities.
+Develop a monthly “Allegheny County Home Value Index” (HVI) to understand key features of the market. Create a model to gain insights for investment opportunities. As per prompt description which can be found [here] (/prompt.html)
 
 # About the Dataset
 The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments). Each of the features contained in the dataset is explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
