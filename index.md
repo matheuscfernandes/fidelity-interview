@@ -50,7 +50,7 @@ In an attempt at feature engineering, I tried converting street addresses into l
 Lastly, to ensure proper weighting between features, I standardized the dataset.
 
 # 2. Exploratory Data Analysis
-This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/2-ExploratoryDataAnalysis.ipynb) and [Deepnote](hhttps://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/2-ExploratoryDataAnalysis-1f3e6d6774db446fa849362dfdb27414)
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/2-ExploratoryDataAnalysis.ipynb) and [Deepnote](https://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/2-ExploratoryDataAnalysis-1f3e6d6774db446fa849362dfdb27414)
 
 I performed Exploratory Data Analysis on the data before considering any models. This allows me to understand the effects of each of the variables on the target data of interest, namely, each property’s sale price.
 
