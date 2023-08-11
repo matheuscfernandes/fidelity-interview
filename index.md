@@ -4,7 +4,7 @@ title: Allegheny County House Value Index
 description: A Case Study presented to Fidelity Management & Research Interview Committee
 ---
 
-You may also execute the code presented in this analysis using [DeepNote](https://deepnote.com/@fernandes/Allegheny-County-Home-Value-Index-TYg-QHBbTueTJolQAKlV9Q).
+You may also execute the code presented in this analysis using [DeepNote](https://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/1-DataCleaning-e22221516a40453691eb7fa09e741d87).
 
 # About Matheus C. Fernandes
 I am a finishing Ph.D. candidate in Applied Mathematics at Harvard University School of Engineering and Applied Sciences. As an NSF-GRFP fellow, my Ph.D. thesis involves numerically modeling bio-inspired optimized materials and applying generative parametric machine learning algorithms to control soft robotic actuators and classify objects based on embedded sensor data. You may watch a TED-style talk on my research work on [Youtube](https://youtu.be/u16FjNGMoEs).
@@ -27,7 +27,7 @@ Develop a monthly “Allegheny County Home Value Index” (HVI) to understand ke
 The dataset can be obtained from the [Western PA Regional Data Center](https://data.wprdc.org/dataset/property-assessments). Each of the features contained in the dataset is explained in [this document](./assets/property-assessment-data-dictionaryrev.pdf).
 
 # 1. Data Cleaning
-This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/1-DataCleaning.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F1-DataCleaning.ipynb)
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/1-DataCleaning.ipynb) and [Deepnote](https://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/1-DataCleaning-e22221516a40453691eb7fa09e741d87)
 
 In order to ensure adequate and properly labeled data, I performed a strict data cleaning procedure. I removed data that is missing important information such as 
 
@@ -50,7 +50,7 @@ In an attempt at feature engineering, I tried converting street addresses into l
 Lastly, to ensure proper weighting between features, I standardized the dataset.
 
 # 2. Exploratory Data Analysis
-This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/2-ExploratoryDataAnalysis.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F2-ExploratoryDataAnalysis.ipynb)
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/2-ExploratoryDataAnalysis.ipynb) and [Deepnote](hhttps://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/2-ExploratoryDataAnalysis-1f3e6d6774db446fa849362dfdb27414)
 
 I performed Exploratory Data Analysis on the data before considering any models. This allows me to understand the effects of each of the variables on the target data of interest, namely, each property’s sale price.
 
@@ -100,7 +100,7 @@ From the plot below, I see that there is a positive correlation between the prop
 <div style="text-align:center"><img src="./assets/assesdep.png" width='50%'></div>
 
 # 3. Model Exploration
-This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/3-ModelExploration.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F3-ModelExploration.ipynb)
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/3-ModelExploration.ipynb) and [Deepnote](https://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/3-ModelExploration-5dbdd3a195e24f5a9b2286b25eac84f7)
 
 **Model Goal:** Predict valuation of existing homes for a variable sale date.  
 
@@ -171,7 +171,7 @@ For computational efficiency, I only tuned 1 parameter, namely the number of est
 <div style="text-align:center"><img src="./assets/hypertune.png" width='50%'></div>
 
 # 4. Computing HVI
-This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/4-ComputingHVI.ipynb) and [Deepnote](https://deepnote.com/project/4d883e40-705b-4ee7-9326-895000a955f5#%2F4-ComputingHVI.ipynb)
+This portion of the project can be found on [Github](https://github.com/matheuscfernandes/fidelity-interview/blob/main/4-ComputingHVI.ipynb) and [Deepnote](https://deepnote.com/workspace/fernandes-0d0f1b15-266f-475a-be59-e6ea9f90c0eb/project/Allegheny-County-Home-Value-Index-4d883e40-705b-4ee7-9326-895000a955f5/notebook/4-ComputingHVI-c04b3e2480664138b5f8da717146fbf2)
 
 The Home Value Index measure presented here is based on the [Zillow HVI methodology](https://www.zillow.com/research/zhvi-methodology-2019-deep-26226/).
 
